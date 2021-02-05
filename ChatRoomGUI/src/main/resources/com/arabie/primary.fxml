@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="289.0" prefWidth="563.0" styleClass="pane" stylesheets="@myCss.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arabie.PrimaryController">
+   <children>
+      <TextField fx:id="userName" layoutX="68.0" layoutY="151.0" onAction="#onEnterTyped" prefHeight="25.0" prefWidth="265.0" promptText="Please Enter Your Name" style="-fx-text-fill: #252D3B " styleClass="custom-text-field" />
+      <Label layoutX="50.0" layoutY="76.0" prefHeight="58.0" prefWidth="318.0" styleClass="userName" stylesheets="@myCss.css" text="JETS Chat Room" />
+      <ImageView fx:id="imageId" fitHeight="116.0" fitWidth="126.0" layoutX="404.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="choosPicBtn" layoutX="417.0" layoutY="151.0" mnemonicParsing="false" onAction="#choosePicBtnHandler" prefHeight="25.0" prefWidth="100.0" text="Choose Pic" />
+      <Button fx:id="switchBtn" layoutX="161.0" layoutY="197.0" mnemonicParsing="false" onAction="#onClickYalla" prefHeight="25.0" prefWidth="80.0" text="Yalla!" />
+   </children>
+</AnchorPane>

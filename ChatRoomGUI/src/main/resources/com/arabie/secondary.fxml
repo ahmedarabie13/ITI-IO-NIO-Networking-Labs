@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="pane" stylesheets="@myCss.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arabie.SecondaryController">
+   <children>
+      <BorderPane prefHeight="124.0" prefWidth="300.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Label fx:id="userName" maxHeight="Infinity" prefHeight="124.0" prefWidth="153.0" style="-fx-font-size: 25;" text="Label" wrapText="true" BorderPane.alignment="CENTER_LEFT" />
+         </center>
+         <right>
+            <ImageView fx:id="userImage" fitHeight="89.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="30.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </right>
+      </BorderPane>
+      <ScrollPane fx:id="scrlPane" hbarPolicy="NEVER" layoutX="14.0" layoutY="126.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="126.0">
+         <content>
+            <VBox fx:id="chatWindow" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="textFieldMsg" layoutX="16.0" layoutY="350.0" onAction="#enterClicked" prefHeight="25.0" prefWidth="263.0" promptText="Send Message" styleClass="custom-text-field" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" />
+   </children>
+</AnchorPane>

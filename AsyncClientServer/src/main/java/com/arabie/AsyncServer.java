@@ -20,8 +20,8 @@ public class AsyncServer {
 
                 ByteBuffer buffer = ByteBuffer.allocate(1024);
                 Future<Integer> readval = client.read(buffer);
-                System.out.println("Received from client: " + new String(buffer.array()).trim());
                 readval.get();
+                System.out.println("Received from client: " + new String(buffer.array()).trim());
                 buffer.flip();
                 String str = "I'm fine. Thank you!";
                 Future<Integer> writeVal = client.write(ByteBuffer.wrap(str.getBytes()));

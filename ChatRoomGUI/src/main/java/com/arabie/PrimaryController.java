@@ -29,6 +29,8 @@ public class PrimaryController {
     public void onClickYalla() throws IOException {
 
         App.switchToSecondary(new User(imageId.getImage(),userName.getText()));
+
+
 //        App.switchToSecondary(new User(imageId.getImage(),userName.getText()));
 //        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("secondary.fxml"));
 //        fxmlLoader.setResources(new ResourceBundle() {
@@ -53,6 +55,7 @@ public class PrimaryController {
 ////            ((Stage)userName.getScene().getWindow()).setMinWidth(300);
 //            App.setRoot((Parent) fxmlLoader.load());
 //        }
+
     }
     @FXML
     public void onEnterTyped() throws IOException {

@@ -20,6 +20,9 @@ import java.util.Scanner;
 /**
  * JavaFX App
  */
+
+
+//auto closa
 public class App extends Application {
 
     @Override

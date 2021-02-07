@@ -12,11 +12,13 @@ public class WriteFilesViaChannel {
     public static void main(String args[]) {
         try (FileChannel fChan = (FileChannel) Files.newByteChannel(Paths.get("output.txt"), StandardOpenOption.WRITE,
                 StandardOpenOption.CREATE)) {
+
             ByteBuffer mBuf = ByteBuffer.allocate(26);
             for (int i = 0; i < 26; i++)
                 mBuf.put((byte) ('A' + i));
             mBuf.rewind();
             fChan.write(mBuf);
+
         } catch (InvalidPathException e) {
             System.out.println("Path Error " + e);
         } catch (IOException e) {

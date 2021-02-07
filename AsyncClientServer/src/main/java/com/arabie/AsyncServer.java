@@ -14,6 +14,8 @@ public class AsyncServer {
 
             server.bind(new InetSocketAddress("127.0.0.1", 1234));
             Future<AsynchronousSocketChannel> acceptCon = server.accept();
+            //todo accept signature with handler
+
             AsynchronousSocketChannel client = acceptCon.get(10, TimeUnit.SECONDS);
 
             if ((client != null) && (client.isOpen())) {

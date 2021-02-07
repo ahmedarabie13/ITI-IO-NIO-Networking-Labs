@@ -1,0 +1,72 @@
+
+
+.pane{
+     /*-fx-background-color: linear-gradient(#C1BA95  0%,#E4D1AC 20%, #F1E0CC 100%);*/
+	/*-fx-background-color: #403f31;*/
+     -fx-background-color: #3B444F;
+}
+.vBox{
+     -fx-background-color: linear-gradient(#FFFF66  0%, #ffffAA 100%);
+}
+
+.scrlPane{
+     -fx-background-color: linear-gradient(#FFFF66  0%, #ffffAA 100%);
+     -fx-border-radius: 30%;
+}
+.button{
+     -fx-text-fill: #F4F4F4;
+     -fx-border-radius: 30%;
+     -fx-background-color: #252D3B;
+}
+.button:hover{
+     -fx-background-color: #909090;
+}
+@font-face {
+
+     src: url("Goldman-Regular.ttf");
+}
+@font-face {
+     src: url("YuseiMagic-Regular.ttf");
+}
+
+.userName{
+     -fx-text-fill: #191919;
+     -fx-font-size: 30;
+     -fx-font-family: "Goldman";
+     -fx-alignment: center;
+     -fx-prompt-text-fill: #11A3F2;
+}
+
+.label{
+     -fx-text-fill: #909090;
+     fx-font-family: "Goldman";
+     -fx-font-weight: bold;
+}
+.custom-text-field {
+     -fx-background-color:
+             #FFFFFF,
+             #FFFFFF;
+     -fx-background-insets: 0, 2;
+     -fx-prompt-text-fill: #3B444F;
+     -fx-border-radius: 10;
+     -fx-text-fill: #191919;
+}
+
+.custom-text-field:focused {
+     -fx-background-color:
+             #909090,
+             #FFFFFF;
+     -fx-prompt-text-fill: white;
+}
+
+.custom-text-field:hover {
+     -fx-background-color:
+             #909090,
+             #FFFFFF;
+}
+
+.custom-text-field:focused:hover {
+     -fx-background-color:
+             #909090,
+             #FFFFFF;
+}

@@ -24,7 +24,7 @@ public class EchoClientTwo {
                 String line = in.nextLine();
                 System.out.println(line);
 //                System.out.print("client: ");
-                str = sender.next();
+                str = sender.nextLine();
                 out.println(str);
 
             }
